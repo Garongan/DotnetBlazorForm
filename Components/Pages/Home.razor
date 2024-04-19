@@ -5,29 +5,33 @@
 <h1>Form Harbour</h1>
 <form class="w-50" autocomplete="off">
     <div class="mb-3">
-        <label for="country" class="form-label">Negara</label>
-        <input type="text" name="country" id="CountryName" class="form-control" />
+        <label for="CountryName" class="form-label">Negara</label>
+        <input type="text" name="CountryName" id="CountryName" class="form-control" />
     </div>
     <div class="mb-3">
-        <label for="port" class="form-label">Pelabuhan</label>
-        <input type="text" class="form-control" name="port" id="HarbourName">
+        <label for="HarbourName" class="form-label">Pelabuhan</label>
+        <input type="text" class="form-control" name="HarbourName" id="HarbourName">
     </div>
     <div class="mb-3">
-        <label for="item" class="form-label">Barang</label>
-        <input type="text" class="form-control" name="item">
+        <label for="StuffCode" class="form-label">Barang</label>
+        <input type="text" class="form-control" name="StuffCode" id="StuffCode">
     </div>
     <div class="mb-3">
-        <textarea class="form-control" name="itemDetails" rows="3"></textarea>
+        <textarea class="form-control" name="StuffDetails" rows="3" id="StuffDetails"></textarea>
     </div>
     <div class="mb-3">
-        <label for="dutyPrice" class="form-label">Tarif Bea Masuk</label>
+        <label for="StuffPrice" class="form-label">Harga Barang</label>
+        <input type="text" class="form-control" name="StuffPrice" id="StuffPrice">
+    </div>
+    <div class="mb-3">
+        <label for="StuffDuty" class="form-label">Tarif Bea Masuk</label>
         <div class="d-flex gap-3 flex-row align-items-center">
-            <input type="text" class="form-control w-25" name="price">
+            <input type="text" class="form-control w-25" name="StuffDuty" id="StuffDuty" disabled>
             <span>%</span>
         </div>
     </div>
     <div class="mb-3">
-        <input type="text" class="form-control" name="dutyPriceDetails">
+        <input type="text" class="form-control" name="StuffDutyTotal" id="StuffDutyTotal" disabled>
     </div>
 </form>
 
