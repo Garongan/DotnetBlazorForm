@@ -1,6 +1,15 @@
 $(document).ready(function () {
     let kd_negara = "";
     let hs_code = "";
+    const toCurrency = (price) => {
+        return price
+            .toLocaleString("id-ID", {
+                style: "currency",
+                currency: "IDR",
+            })
+            .replace(/Rp|,00/g, "")
+            .trim();
+    };
 
     // auto complete country name
     $("#CountryName").autocomplete({
@@ -77,17 +86,7 @@ $(document).ready(function () {
 
     // auto complete stuff price
     $("#StuffPrice").on("keyup", function () {
-        const toCurrency = (price) => {
-            return price
-                .toLocaleString("id-ID", {
-                    style: "currency",
-                    currency: "IDR",
-                })
-                .replace(/Rp|,00/g, "")
-                .trim();
-        };
-        $("#StuffPrice").val(toCurrency($(this).val()));
-        const price = toCurrency($(this).val());
+        const price = toCurrency($(this).val().replace(/\D/g, ""));
         $.ajax({
             url: "http://localhost:3000/tarif?hs_code=" + hs_code,
             method: "GET",
