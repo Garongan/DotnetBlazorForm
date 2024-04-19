@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DotnetBlazorForm.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DotnetBlazorForm.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DotnetBlazorForm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DotnetBlazorForm.props",
+      "PackagePath": "build\\DotnetBlazorForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DotnetBlazorForm.props",
+      "PackagePath": "buildMultiTargeting\\DotnetBlazorForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DotnetBlazorForm.props",
+      "PackagePath": "buildTransitive\\DotnetBlazorForm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
