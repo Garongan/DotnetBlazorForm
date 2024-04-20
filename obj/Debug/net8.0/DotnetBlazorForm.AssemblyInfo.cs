@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotnetBlazorForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6987e53cb020ee95f46a3eaeaff7b76f8b9eac88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d617fe02be200ef8c8cc450453b2995b1639d402")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotnetBlazorForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotnetBlazorForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
