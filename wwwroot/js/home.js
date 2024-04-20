@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const baseUrl = "http://localhost:3000";
+    const baseUrl = "https://insw-dev.ilcs.co.id/n";
     let kd_negara = "";
     let hs_code = "";
     const toCurrency = (price) => {
