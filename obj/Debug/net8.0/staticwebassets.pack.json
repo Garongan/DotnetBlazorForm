@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
       "Id": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

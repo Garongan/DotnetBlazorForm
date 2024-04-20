@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const baseUrl = "https://insw-dev.ilcs.co.id/n";
+    const baseUrl = "http://localhost:3000";
     let kd_negara = "";
     let hs_code = "";
     const toCurrency = (price) => {
@@ -24,12 +24,12 @@ $(document).ready(function () {
                     response(
                         data
                             .map((item) => {
-                                const name = item.name.toLowerCase();
+                                const name = item.name.toUpperCase();
                                 return (
-                                    name.startsWith(request.term.toLowerCase()) && {
-                                        label: name.toUpperCase(),
+                                    name.startsWith(request.term.toUpperCase()) && {
+                                        label: name,
                                         kd_negara: item.kd_negara,
-                                        value: name.toUpperCase(),
+                                        value: name,
                                     }
                                 );
                             })
@@ -55,11 +55,11 @@ $(document).ready(function () {
                     response(
                         data
                             .map((item) => {
-                                const ur_pelabuhan = item.ur_pelabuhan.toLowerCase();
+                                const ur_pelabuhan = item.ur_pelabuhan.toUpperCase();
                                 return (
-                                    ur_pelabuhan.startsWith(request.term.toLowerCase()) && {
-                                        label: ur_pelabuhan.toUpperCase(),
-                                        value: ur_pelabuhan.toUpperCase(),
+                                    ur_pelabuhan.startsWith(request.term.toUpperCase()) && {
+                                        label: ur_pelabuhan,
+                                        value: ur_pelabuhan,
                                     }
                                 );
                             })
@@ -71,7 +71,7 @@ $(document).ready(function () {
     });
 
     // auto complete details stuff from code code
-    $("#StuffCode").on("change", function () {
+    $("#StuffCode").on("keyup", function () {
         hs_code = $(this).val();
         $.ajax({
             url: baseUrl + "/barang?hs_code=" + hs_code,
@@ -82,11 +82,14 @@ $(document).ready(function () {
                     $("#StuffDetails").val(data[0].details);
                 }
             },
+            error: function (data) {
+                $("#StuffDetails").val("error: data tidak ditemukan");
+            },
         });
     });
 
     // auto complete stuff price
-    $("#StuffPrice").on("change", function () {
+    $("#StuffPrice").on("keyup", function () {
         const price = toCurrency($(this).val().replace(/\D/g, ""));
         $.ajax({
             url: baseUrl + "/tarif?hs_code=" + hs_code,

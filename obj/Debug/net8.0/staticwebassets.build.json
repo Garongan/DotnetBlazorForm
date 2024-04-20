@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oqBWoGPJdZ5l+NzYHuPTX3KoDUqW+Vj323PNql7P88c=",
+  "Hash": "VTP0dvUSzQYuD8+ZixV9RSoNIbzxDsgGonIFv2mfoRo=",
   "Source": "DotnetBlazorForm",
   "BasePath": "_content/DotnetBlazorForm",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\css\\jquery-ui.css",
+      "SourceId": "DotnetBlazorForm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\",
+      "BasePath": "_content/DotnetBlazorForm",
+      "RelativePath": "css/jquery-ui.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
     },
     {
       "Identity": "E:\\bootcamp\\dotnet\\DotnetBlazorForm\\wwwroot\\favicon.png",
