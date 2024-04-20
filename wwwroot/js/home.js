@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    const baseUrl = "https://insw-dev.ilcs.co.id/n";
     let kd_negara = "";
     let hs_code = "";
     const toCurrency = (price) => {
@@ -16,7 +17,7 @@ $(document).ready(function () {
         minLength: 3,
         source: function (request, response) {
             $.ajax({
-                url: "http://localhost:3000/negara?ur_negara=" + request.term,
+                url: baseUrl + "/negara?ur_negara=" + request.term,
                 method: "GET",
                 dataType: "json",
                 success: function (data) {
@@ -47,7 +48,7 @@ $(document).ready(function () {
         minLength: 3,
         source: function (request, response) {
             $.ajax({
-                url: "http://localhost:3000/pelabuhan?kd_negara=" + kd_negara + "&ur_pelabuhan=" + request.term,
+                url: baseUrl + "/pelabuhan?kd_negara=" + kd_negara + "&ur_pelabuhan=" + request.term,
                 method: "GET",
                 dataType: "json",
                 success: function (data) {
@@ -70,10 +71,10 @@ $(document).ready(function () {
     });
 
     // auto complete details stuff from code code
-    $("#StuffCode").on("keyup", function () {
+    $("#StuffCode").on("change", function () {
         hs_code = $(this).val();
         $.ajax({
-            url: "http://localhost:3000/barang?hs_code=" + hs_code,
+            url: baseUrl + "/barang?hs_code=" + hs_code,
             method: "GET",
             dataType: "json",
             success: function (data) {
@@ -85,16 +86,15 @@ $(document).ready(function () {
     });
 
     // auto complete stuff price
-    $("#StuffPrice").on("keyup", function () {
+    $("#StuffPrice").on("change", function () {
         const price = toCurrency($(this).val().replace(/\D/g, ""));
         $.ajax({
-            url: "http://localhost:3000/tarif?hs_code=" + hs_code,
+            url: baseUrl + "/tarif?hs_code=" + hs_code,
             method: "GET",
             dataType: "json",
             success: function (data) {
                 if (data) {
                     const dutyPrice = data.rate_bea_masuk;
-
                     $("#StuffDuty").val(dutyPrice);
                     $("#StuffDutyTotal").val(toCurrency(price * (dutyPrice / 100)));
                 }
